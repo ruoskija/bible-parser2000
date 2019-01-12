@@ -1,0 +1,18 @@
+THIS IS AN OLD TESTAMENT TITLE, IT IS NOT TO BE INCLUDED
+This is a normal line. it is to be included.
+
+
+This line and the previous line are not supposed to have empty lines in between.
+	This new testament title nad it is not included.
+    This line starts with empty space but it is supposed to be included anyway.
+Here we have a CAPITAL word for emphasis, it is included.
+this lower case line is included
+
+
+42. a line with a number at the beginning is included.
+	3. This title is not included
+   THIS TITLE IS OUT AS WELL
+23. AND THIS IS OUT TOO
+
+
+##############
