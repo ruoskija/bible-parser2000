@@ -1,18 +1,45 @@
+	This file is meant for testing bparser.py.
+	When prompted for a filename, type testbible.txt to run this test.
+	The results appear in parsedbible.txt.
+	The lines that are kept in parsedbible.txt should indicate if the test was sucesfull or not.
+	This file and parsedbible.txt can be compared to verify the output formatting of bparser.py.
+
+
+    
+
 THIS IS AN OLD TESTAMENT TITLE, IT IS NOT TO BE INCLUDED
-This is a normal line. it is to be included.
+	This is a new testament title and it is not included.
+
+1Moos. 1:1 This is the first line.
+1Moos. 1:2 This is the second line. It has two sentences.
+1Moos. 1:3 The third line is broken up
+into two pieces, but looks like a single line after being processed.
+1Moos 1:4 A chapter is the first word of the line. It has no period in it.
+1MOOS. 1:5 The chapter is lowercase, e.g. "1moos"
+1moos 1:6. A verse is the second word. It contains only numbers and special characters.
+1moos. 1:7. The verses do not contain periods.
+1moos 1:8 A chapter and a verse are followed by the delimiter string you picked.
+1moos 1:9 I recommend '%' as the Finnish bible does not contain any percent signs.
+
+2moos 1:1 This
+
+is
+
+a single
 
 
-This line and the previous line are not supposed to have empty lines in between.
-	This new testament title nad it is not included.
-    This line starts with empty space but it is supposed to be included anyway.
-Here we have a CAPITAL word for emphasis, it is included.
-this lower case line is included
+line.
+
+Ilm 1:337 No empty lines in this file (excluding first row).
+    joh 56:78 This line starts with empty space. It is included without the empty space.
 
 
-42. a line with a number at the beginning is included.
-	3. This title is not included
-   THIS TITLE IS OUT AS WELL
-23. AND THIS IS OUT TOO
+	3Moos 12:34 This title is not included, even if it has a verse.
+   3MOOS. 23:45 THIS TITLE IS OUT, EVEN IF IT HAS A VERSE
+   
+meta 0:0 These tests cover the errors found in the original finnish_bible.txt.
+meta....... 0:0...... You could want to test e.g. having multiple periods in the chapter
+and verse, but that never happens in the original file.
+meta 0:0 The original file is not included in this repository, it is copyright protected.
 
 
-##############
